@@ -1,0 +1,58 @@
+#!/bin/bash
+#
+# Authors: Guo Yunhe <i@guoyunhe.me>
+# Created: 2018-10-06
+# Updated: 2018-10-11
+# 
+# Build RPM packages from a SPEC file. Automatically download sources from
+# GitHub/GitLab/BitBucket.
+# 
+# [Usage]
+#
+#   ./build_package <package_name>
+#
+# [Requires]
+#
+#   rpm rpm-build nodejs
+#
+
+if [ -z "$1" ]; then
+    echo "No pcakge name given!"
+    echo "Usage: rpmbuild_spec <package_name>"
+    exit
+fi
+
+ROOT_DIR=$PWD
+REPO_DIR=$ROOT_DIR/repo
+SPEC_DIR=$ROOT_DIR/spec
+
+RPMBUILD_DIR=~/rpmbuild
+RPMBUILD_SOURCES_DIR=$RPMBUILD_DIR/SOURCES
+RPMBUILD_RPMS_DIR=$RPMBUILD_DIR/RPMS
+mkdir -p $RPMBUILD_SOURCES_DIR
+
+SPEC_FILE=$SPEC_DIR/$1/$1.spec
+SOURCE_URL=$(rpmspec -P $SPEC_FILE | grep -oP "Source0\:\s+\K\S+")
+SOURCE_FILENAME=$(echo $SOURCE_URL | grep -oP "\#\/\K\S+")
+SOURCE_FILE=$RPMBUILD_SOURCES_DIR/$SOURCE_FILENAME
+PACKAGE_NAME=$1
+PACKAGE_VERSION=$(rpmspec -P $SPEC_FILE | grep -oP "Version\:\s+\K\S+")
+PACKAGE_RELEASE=$(rpmspec -P $SPEC_FILE | grep -oP "Release\:\s+\K\S+")
+PACKAGE_FILENAME=$PACKAGE_NAME-$PACKAGE_VERSION-$PACKAGE_RELEASE.x86_64.rpm
+PACKAGE_FILE=$REPO_DIR/x86_64/$PACKAGE_FILENAME
+
+mkdir -p $REPO_DIR
+
+# Downlaod main source if not existing
+if [ ! -f "$SOURCE_FILE" ]; then
+    echo "Downloading $SOURCE_FILENAME"
+    wget -O $SOURCE_FILE $SOURCE_URL
+    echo "Done"
+fi
+
+# Build x86_64 package if not existing
+if [ ! -f "$PACKAGE_FILE" ]; then
+    echo "Building $1"
+    rpmbuild -ba $SPEC_FILE && mv $RPMBUILD_RPMS_DIR/* $REPO_DIR/
+    echo "Done"
+fi

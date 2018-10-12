@@ -1,8 +1,0 @@
-#!/bin/bash
-#
-# Downlaod sources from GitHub/GitLab releases
-
-URL=$(rpmspec -P *.spec | grep -oP "Source0\:\s+\K\S+")
-FILENAME=$(echo $URL | grep -oP "\#\/\K\S+")
-
-wget -O $FILENAME $URL
