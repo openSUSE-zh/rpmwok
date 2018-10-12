@@ -34,6 +34,7 @@ do
 done
 
 # Sign all packages
+# We don't just sign new packages. In case we changed the GPG key, we resign all
 for RPM in $REPO_DIR
 do
     rpm --resign $RPM
