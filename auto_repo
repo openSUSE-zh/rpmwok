@@ -42,3 +42,6 @@ done
 
 # Create repodata
 createrepo $REPO_DIR
+
+# Add detached signature to repodata
+gpg --detach-sign --armor $REPO_DIR/repodata/repomd.xml
