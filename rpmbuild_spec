@@ -39,7 +39,7 @@ PACKAGE_NAME=$1
 PACKAGE_VERSION=$(rpmspec -P $SPEC_FILE | grep -oP "Version\:\s+\K\S+")
 PACKAGE_RELEASE=$(rpmspec -P $SPEC_FILE | grep -oP "Release\:\s+\K\S+")
 PACKAGE_FILENAME=$PACKAGE_NAME-$PACKAGE_VERSION-$PACKAGE_RELEASE.x86_64.rpm
-PACKAGE_FILE=$REPO_DIR/x86_64/$PACKAGE_FILENAME
+PACKAGE_FILE=$REPO_DIR/$PACKAGE_FILENAME
 
 mkdir -p $REPO_DIR
 
@@ -53,6 +53,6 @@ fi
 # Build x86_64 package if not existing
 if [ ! -f "$PACKAGE_FILE" ]; then
     echo "Building $1"
-    rpmbuild -ba $SPEC_FILE && mv $RPMBUILD_RPMS_DIR/* $REPO_DIR/
+    rpmbuild -ba $SPEC_FILE && mv $RPMBUILD_RPMS_DIR/x86_64/* $REPO_DIR/
     echo "Done"
 fi
