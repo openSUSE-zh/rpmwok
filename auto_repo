@@ -19,6 +19,7 @@
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 SPEC_DIR=$ROOT_DIR/spec
 REPO_DIR=$ROOT_DIR/repo
+JS_FILE=$REPO_DIR/js/packages.js
 
 cd $SPEC_DIR
 
@@ -33,12 +34,18 @@ do
     ./rpmbuild_spec $PKG
 done
 
+cp /dev/null $JS_FILE
+echo "var packages=[" >> $JS_FILE
+
 # Sign all packages
 # We don't just sign new packages. In case we changed the GPG key, we resign all
-for RPM in $REPO_DIR
+for RPM in $REPO_DIR/*.rpm
 do
     rpm --resign $RPM
+    echo "'$RPM'," >> $JS_FILE
 done
+
+echo "];" >> $JS_FILE
 
 # Create repodata
 createrepo $REPO_DIR
