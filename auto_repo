@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+# Authors: Guo Yunhe <i@guoyunhe.me>
+# Created: 2018-10-06
+# Updated: 2018-10-11
+# 
+# Build RPM packages from a SPEC file. Automatically download sources from
+# GitHub/GitLab/BitBucket.
+# 
+# [Usage]
+#
+#   ./build_package <package_name>
+#
+# [Requires]
+#
+#   createrepo rpm rpm-build nodejs npm
+#
+
+ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+SPEC_DIR=$ROOT_DIR/spec
+REPO_DIR=$ROOT_DIR/repo
+
+cd $SPEC_DIR
+
+PACKAGES=$(ls $SPEC_DIR)
+
+cd $ROOT_DIR
+
+# Build packages
+# Up-to-date packages will be skipped to save time and resources
+for PKG in $PACKAGES
+do
+    ./rpmbuild_spec $PKG
+done
+
+# Sign all packages
+for RPM in $REPO_DIR
+do
+    rpm --resign $RPM
+done
+
+# Create repodata
+createrepo $REPO_DIR

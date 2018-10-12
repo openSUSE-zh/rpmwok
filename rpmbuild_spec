@@ -13,7 +13,7 @@
 #
 # [Requires]
 #
-#   rpm rpm-build nodejs
+#   rpm rpm-build nodejs npm
 #
 
 if [ -z "$1" ]; then
@@ -22,7 +22,7 @@ if [ -z "$1" ]; then
     exit
 fi
 
-ROOT_DIR=$PWD
+ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 REPO_DIR=$ROOT_DIR/repo
 SPEC_DIR=$ROOT_DIR/spec
 
