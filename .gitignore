@@ -2,3 +2,4 @@
 /repo/RPM-GPG-KEY-ELECTRON
 /repo/repodata
 /repo/*.repo
+/repo/js/packages.js

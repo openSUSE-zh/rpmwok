@@ -42,7 +42,7 @@ echo "var packages=[" >> $JS_FILE
 for RPM in $REPO_DIR/*.rpm
 do
     rpm --resign $RPM
-    echo "'$RPM'," >> $JS_FILE
+    echo "'$(basename $RPM)'," >> $JS_FILE
 done
 
 echo "];" >> $JS_FILE

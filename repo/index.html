@@ -23,18 +23,24 @@
         }
 
         h1,
+        h2,
         h4 {
             font-family: 'Raleway', sans-serif;
         }
 
         h1 {
             font-weight: 100;
-            font-size: 4rem;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-weight: 100;
+            font-size: 1.5rem;
         }
 
         h4 {
             font-weight: 300;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         pre {
@@ -43,6 +49,8 @@
         }
 
         img {
+            flex: 0 0 200px;
+            width: 200px;
             max-width: 100%;
             height: auto;
         }
@@ -54,12 +62,39 @@
 
         .container {
             margin: auto;
-            max-width: 40rem;
+            max-width: 50rem;
             padding: 1rem;
         }
 
         a {
             color: #73ba25;
+        }
+
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            header {
+                text-align: left;
+            }
+
+            header .container {
+                display: flex;
+                align-items: center;
+            }
+
+            header .text {
+                margin-left: 2rem;
+            }
         }
     </style>
 
@@ -70,15 +105,25 @@
     <header>
         <div class="container">
             <img src="images/logo.png" width="400" height="400" alt="Logo">
-            <h1>Electron RPMbuild</h1>
-            <h4>Electron packages for openSUSE, SLE, Fedora, CentOS</h4>
+            <div class="text">
+                <h1>Electron RPMbuild</h1>
+                <h4>Electron packages for openSUSE, SLE, Fedora, CentOS</h4>
+            </div>
         </div>
     </header>
 
     <div class="container">
+        <h2>Add repository in openSUSE &amp; SLE</h2>
         <pre>sudo zypper ar -f https://electron-rpmbuild.guoyunhe.me/electron-rpmbuild.repo</pre>
         <pre>sudo zypper ref</pre>
-        <pre>sudo zypper in ...</pre>
+        <h2>Add repository in Fedora &amp; CentOS</h2>
+        <pre>sudo dnf config-manager --add-repo https://electron-rpmbuild.guoyunhe.me/electron-rpmbuild.repo</pre>
+        <pre>sudo dnf config-manager --set-enabled electron-rpmbuild</pre>
+    </div>
+
+    <div class="container">
+        <h2>Packages</h2>
+        <ul id="package-list"></ul>
     </div>
 
     <footer>
@@ -89,6 +134,8 @@
         </div>
     </footer>
 
+    <script src="js/packages.js"></script>
+    <script src="js/package-list.js"></script>
 </body>
 
 </html>
