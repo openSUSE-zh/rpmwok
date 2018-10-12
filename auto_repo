@@ -51,4 +51,5 @@ echo "];" >> $JS_FILE
 createrepo $REPO_DIR
 
 # Add detached signature to repodata
+rm $REPO_DIR/repodata/repomd.xml.asc
 gpg --detach-sign --armor $REPO_DIR/repodata/repomd.xml
