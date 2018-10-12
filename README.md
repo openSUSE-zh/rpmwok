@@ -57,6 +57,9 @@ old expires. Otherwise, users will get errors when fetching your repository.
 
 1. Clone this repository on your server.
 2. Run `auto_repo`. It will build, sign and publish all packages.
+3. Copy `repo/electron-rpmbuild.repo.example` to `repo/electron-rpmbuild.repo`
+   and modify URL
+4. Set up your web server. Point document root to `repo` directory.
 
 You can create a Cron job to fetch new packages and rebuild repository every night.
 If version and release in spec file didn't change, package build will be skipped.
