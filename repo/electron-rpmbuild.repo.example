@@ -1,0 +1,9 @@
+[electron-rpmbuild]
+name=Electron RPMbuild
+enabled=1
+autorefresh=1
+baseurl=https://electron-rpmbuild.guoyunhe.me/
+type=yum
+gpgcheck=1
+gpgkey=https://electron-rpmbuild.guoyunhe.me/RPM-GPG-KEY-ELECTRON
+keeppackages=0

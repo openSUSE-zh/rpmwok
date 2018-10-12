@@ -1,1 +1,4 @@
-/repo/x86_64
+/repo/*.rpm
+/repo/RPM-GPG-KEY-ELECTRON
+/repo/repodata
+/repo/*.repo
