@@ -21,6 +21,10 @@ SPEC_DIR=$ROOT_DIR/spec
 REPO_DIR=$ROOT_DIR/repo
 JS_FILE=$REPO_DIR/js/packages.js
 
+cd $ROOT_DIR
+
+git pull
+
 cd $SPEC_DIR
 
 PACKAGES=$(ls $SPEC_DIR)
