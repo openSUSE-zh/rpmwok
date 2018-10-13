@@ -7,14 +7,9 @@
 # Build RPM packages from a SPEC file. Automatically download sources from
 # GitHub/GitLab/BitBucket.
 # 
-# [Usage]
+# Usage: ./build_package <package_name>
 #
-#   ./build_package <package_name>
-#
-# [Requires]
-#
-#   createrepo rpm rpm-build nodejs npm
-#
+# Requires: createrepo rpm rpm-build nodejs npm
 
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 SPEC_DIR=$ROOT_DIR/spec

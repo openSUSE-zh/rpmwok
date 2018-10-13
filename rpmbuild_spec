@@ -7,14 +7,9 @@
 # Build RPM packages from a SPEC file. Automatically download sources from
 # GitHub/GitLab/BitBucket.
 # 
-# [Usage]
+# Usage: ./build_package <package_name>
 #
-#   ./build_package <package_name>
-#
-# [Requires]
-#
-#   rpm rpm-build nodejs npm
-#
+# Requires: rpm rpm-build nodejs npm
 
 if [ -z "$1" ]; then
     echo "No pcakge name given!"

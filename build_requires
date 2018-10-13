@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Authors: Guo Yunhe <i@guoyunhe.me>
+# Created: 2018-10-13
+# Updated: 2018-10-13
+# 
+# Install build requirements from SPEC files and scripts
+#
+
+ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+SPEC_DIR=$ROOT_DIR/spec
+
+PACKAGES=""
+
+for SCRIPT in $(find $ROOT_DIR -maxdepth 1 -type f)
+do
+    PACKAGES="$PACKAGES $(cat $SCRIPT | grep -oP "# Requires\:\s+\K\S+")"
+done
+
+for SPEC in $(find $SPEC_DIR -name "*.spec")
+do
+    PACKAGES="$PACKAGES $(cat $SPEC | grep -oP "^Requires\:\s+\K\S+")"
+done
+
+sudo zypper install -y -l $PACKAGES
