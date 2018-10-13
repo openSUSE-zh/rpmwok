@@ -19,6 +19,7 @@ JS_FILE=$REPO_DIR/js/packages.js
 cd $ROOT_DIR
 
 git pull
+./build_requires
 
 cd $SPEC_DIR
 
