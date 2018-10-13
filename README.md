@@ -35,6 +35,8 @@ If build failed, you can check the console output and build directory
 problem, [submit a new issue](https://gitlab.com/guoyunhe/electron-rpmbuild/issues/new).
 We are happy to help you!
 
+[List of Electron related projects on GitHub](https://github.com/topics/electron).
+
 ## How to create GPG key
 
 You need a GPG key to sign packages. Unsigned packages are not trusted by most
