@@ -8,6 +8,7 @@ Url:            https://github.com/webtorrent/%{name}
 Source0:        https://github.com/webtorrent/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  nodejs
 BuildRequires:  npm
+BuildRequires:  zip
 Requires:       nodejs
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
@@ -23,7 +24,7 @@ npm install
 
 %build
 npm run build
-npm run package linux deb
+npm run package linux zip
 
 %install
 mkdir -p %buildroot%{_libdir}/%{name}
