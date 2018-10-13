@@ -3,7 +3,7 @@
 # Authors: Guo Yunhe <i@guoyunhe.me>
 # Created: 2018-10-13
 # Updated: 2018-10-13
-# 
+#
 # Install build requirements from SPEC files and scripts
 #
 
@@ -19,7 +19,7 @@ done
 
 for SPEC in $(find $SPEC_DIR -name "*.spec")
 do
-    PACKAGES="$PACKAGES $(cat $SPEC | grep -oP "^Requires\:\s+\K\S+")"
+    PACKAGES="$PACKAGES $(cat $SPEC | grep -oP "^BuildRequires\:\s+\K\S+")"
 done
 
 sudo zypper install -y -l $PACKAGES
