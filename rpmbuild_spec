@@ -54,6 +54,9 @@ if [ ! -f "$SOURCE_FILE" ]; then
     echo "Done"
 fi
 
+# Copy other source files
+cp $SPEC_DIR/$PACKAGE_NAME/* $RPMBUILD_SOURCES_DIR
+
 # Build package
 echo "Building $1"
 rpmbuild -ba $SPEC_FILE && mv $RPMBUILD_RPMS_DIR/x86_64/* $REPO_DIR/

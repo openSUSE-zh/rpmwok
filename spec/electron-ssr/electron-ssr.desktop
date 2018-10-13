@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Electron ShadowsocksR
+GenericName=ShadowsocksR Client
+GenericName[zh_CN]=ShadowsocksR 客户端
+Comment=Cross platform ShadowsocksR GUI client built with electron
+Comment[zh_CN]=跨平台 ShadowsocksR 图形客户端
+Exec="/usr/lib64/electron-ssr/electron-ssr" %u
+Terminal=false
+Type=Application
+Icon=electron-ssr
+Categories=Network

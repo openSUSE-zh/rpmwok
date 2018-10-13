@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Electronic WeChat
+GenericName=WeChat Desktop Client
+GenericName[zh_CN]=微信桌面客户端
+Comment=A better WeChat on macOS and Linux
+Comment[zh_CN]=Mac OS X 和 Linux 下更好用的微信客户端
+Exec="/usr/lib64/electronic-wechat/electronic-wechat" %u
+Terminal=false
+Type=Application
+Icon=electronic-wechat
+Categories=Network

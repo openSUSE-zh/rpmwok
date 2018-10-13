@@ -1,11 +1,12 @@
 Name:           electronic-wechat
 Version:        2.0
-Release:        1
+Release:        2
 Summary:        A better WeChat on macOS and Linux. Built with Electron.
 License:        MIT
 Group:          Productivity/Networking/Web/Proxy
 Url:            https://github.com/geeeeeeeeek/%{name}
 Source0:        https://github.com/geeeeeeeeek/%{name}/archive/V%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source1:        %{name}.desktop
 BuildRequires:  nodejs
 BuildRequires:  npm
 Requires:       nodejs
@@ -32,10 +33,15 @@ npm run build:linux
 %install
 mkdir -p %buildroot%{_libdir}/%{name}
 cp -r dist/%{name}-linux-x64/* %buildroot%{_libdir}/%{name}
+
 mkdir -p %buildroot%{_bindir}
 ln -s %{_libdir}/%{name}/%{name} %buildroot%{_bindir}/%{name}
 
-# TODO add icons and application file
+mkdir -p %buildroot%{_datadir}/icons/hicolor/512x512/apps
+cp assets/icon.png %buildroot%{_datadir}/icons/hicolor/512x512/apps/%{name}.png
+
+mkdir -p %buildroot%{_datadir}/applications
+cp %{SOURCE1} %buildroot%{_datadir}/applications
 
 %clean
 rm -rf %buildroot/*
@@ -46,5 +52,7 @@ rm -rf %buildroot/*
 %license LICENSE.md
 %{_bindir}/%{name}
 %{_libdir}/%{name}
+%{_datadir}/icons/hicolor/512x512/apps/%{name}.png
+%{_datadir}/applications/%{name}.desktop
 
 %changelog
