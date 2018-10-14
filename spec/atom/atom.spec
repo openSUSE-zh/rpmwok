@@ -44,7 +44,7 @@ script/build
 
 %install
 mkdir -p %buildroot%{_libdir}/%{name}
-cp -r build/linux-unpacked/* %buildroot%{_libdir}/%{name}
+cp -r out/%{name}-%{version}-amd64/* %buildroot%{_libdir}/%{name}
 
 mkdir -p %buildroot%{_bindir}
 ln -s %{_libdir}/%{name}/%{name} %buildroot%{_bindir}/%{name}
@@ -54,17 +54,19 @@ mkdir -p %buildroot%{_datadir}/icons/hicolor/24x24/apps
 mkdir -p %buildroot%{_datadir}/icons/hicolor/32x32/apps
 mkdir -p %buildroot%{_datadir}/icons/hicolor/48x48/apps
 mkdir -p %buildroot%{_datadir}/icons/hicolor/64x64/apps
-mkdir -p %buildroot%{_datadir}/icons/hicolor/96x96/apps
 mkdir -p %buildroot%{_datadir}/icons/hicolor/128x128/apps
 mkdir -p %buildroot%{_datadir}/icons/hicolor/256x256/apps
-cp build/icons/16x16.png %buildroot%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
-cp build/icons/24x24.png %buildroot%{_datadir}/icons/hicolor/24x24/apps/%{name}.png
-cp build/icons/32x32.png %buildroot%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
-cp build/icons/48x48.png %buildroot%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
-cp build/icons/64x64.png %buildroot%{_datadir}/icons/hicolor/64x64/apps/%{name}.png
-cp build/icons/96x96.png %buildroot%{_datadir}/icons/hicolor/96x96/apps/%{name}.png
-cp build/icons/128x128.png %buildroot%{_datadir}/icons/hicolor/128x128/apps/%{name}.png
-cp build/icons/256x256.png %buildroot%{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+mkdir -p %buildroot%{_datadir}/icons/hicolor/512x512/apps
+mkdir -p %buildroot%{_datadir}/icons/hicolor/1024x1024/apps
+cp resources/app-icons/stable/png/16.png %buildroot%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
+cp resources/app-icons/stable/png/24.png %buildroot%{_datadir}/icons/hicolor/24x24/apps/%{name}.png
+cp resources/app-icons/stable/png/32.png %buildroot%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
+cp resources/app-icons/stable/png/48.png %buildroot%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
+cp resources/app-icons/stable/png/64.png %buildroot%{_datadir}/icons/hicolor/64x64/apps/%{name}.png
+cp resources/app-icons/stable/png/128.png %buildroot%{_datadir}/icons/hicolor/128x128/apps/%{name}.png
+cp resources/app-icons/stable/png/256.png %buildroot%{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+cp resources/app-icons/stable/png/512.png %buildroot%{_datadir}/icons/hicolor/512x512/apps/%{name}.png
+cp resources/app-icons/stable/png/1024.png %buildroot%{_datadir}/icons/hicolor/1024x1024/apps/%{name}.png
 
 mkdir -p %buildroot%{_datadir}/applications
 cp %{SOURCE1} %buildroot%{_datadir}/applications
@@ -75,7 +77,7 @@ rm -rf %buildroot/*
 %files
 %defattr(-,root,root)
 %doc README.md
-%license LICENSE
+%license LICENSE.md
 %{_bindir}/%{name}
 %{_libdir}/%{name}
 %{_datadir}/icons/hicolor/16x16/apps/%{name}.png
@@ -83,9 +85,10 @@ rm -rf %buildroot/*
 %{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 %{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 %{_datadir}/icons/hicolor/64x64/apps/%{name}.png
-%{_datadir}/icons/hicolor/96x96/apps/%{name}.png
 %{_datadir}/icons/hicolor/128x128/apps/%{name}.png
 %{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+%{_datadir}/icons/hicolor/512x512/apps/%{name}.png
+%{_datadir}/icons/hicolor/1024x1024/apps/%{name}.png
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
