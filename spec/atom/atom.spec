@@ -21,12 +21,11 @@ BuildRequires:  libX11-devel
 BuildRequires:  libxkbfile-devel
 BuildRequires:  gconf2-devel
 BuildRequires:  libXss-devel
-BuildRequires:  libnss3.so
+BuildRequires:  pkgconfig(nss)
 Requires:       nodejs
 Requires:       gconf2
 Requires:       libXss1
 Requires:       libsecret
-Requires:       libnss3.so
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
