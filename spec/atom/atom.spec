@@ -19,7 +19,12 @@ BuildRequires:  libsecret-devel
 BuildRequires:  rpmdevtools
 BuildRequires:  libX11-devel
 BuildRequires:  libxkbfile-devel
+BuildRequires:  gconf2-devel
+BuildRequires:  libXss-devel
 Requires:       nodejs
+Requires:       gconf2
+Requires:       libXss1
+Requires:       libsecret
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
