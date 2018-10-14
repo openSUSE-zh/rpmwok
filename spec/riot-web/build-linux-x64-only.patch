@@ -1,0 +1,11 @@
+--- riot-web-0.16.6/package.json	2018-10-08 18:21:35.000000000 +0300
++++ riot-web-0.16.6-patched/package.json	2018-10-14 18:00:11.112599899 +0300
+@@ -35,7 +35,7 @@
+     "build:compile": "npm run reskindex && babel --source-maps -d lib src",
+     "build:bundle": "cross-env NODE_ENV=production webpack -p --progress --bail",
+     "build:bundle:dev": "webpack --optimize-occurence-order --progress --bail",
+-    "build:electron": "npm run clean && npm run build && npm run install:electron && build -wml --ia32 --x64",
++    "build:electron": "npm run clean && npm run build && npm run install:electron && build -l --x64",
+     "build:react-sdk": "node scripts/npm-sub.js matrix-react-sdk run start:init",
+     "build:js-sdk": "node scripts/npm-sub.js matrix-js-sdk run start:init",
+     "build": "npm run build:js-sdk && npm run build:react-sdk && npm run reskindex && npm run build:res && npm run build:bundle",
