@@ -3,10 +3,10 @@
 # Authors: Guo Yunhe <i@guoyunhe.me>
 # Created: 2018-10-06
 # Updated: 2018-10-11
-# 
+#
 # Build RPM packages from a SPEC file. Automatically download sources from
 # GitHub/GitLab/BitBucket.
-# 
+#
 # Usage: ./build_package <package_name>
 #
 # Requires: createrepo rpm rpm-build nodejs npm
@@ -18,7 +18,11 @@ JS_FILE=$REPO_DIR/js/packages.js
 
 cd $ROOT_DIR
 
+# Update NPM
+sudo npm i -g npm
+# Git sync
 git pull
+# Install BuildRequeires
 ./build_requires
 
 cd $SPEC_DIR
