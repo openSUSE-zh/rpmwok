@@ -88,6 +88,7 @@ rm -rf %buildroot/*
 %doc README.md
 %license LICENSE.md
 %{_bindir}/%{name}
+%{_bindir}/apm
 %{_libdir}/%{name}
 %{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 %{_datadir}/icons/hicolor/24x24/apps/%{name}.png
