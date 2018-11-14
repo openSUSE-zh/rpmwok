@@ -53,7 +53,10 @@ mkdir -p %buildroot%{_libdir}/%{name}
 cp -r out/%{name}-%{version}-amd64/* %buildroot%{_libdir}/%{name}
 
 mkdir -p %buildroot%{_bindir}
+# /usr/bin/atom
 ln -s %{_libdir}/%{name}/%{name} %buildroot%{_bindir}/%{name}
+# /usr/bin/apm
+ln -s %{_libdir}/%{name}/resources/app/apm/node_modules/.bin/apm %buildroot%{_bindir}/apm
 
 mkdir -p %buildroot%{_datadir}/icons/hicolor/16x16/apps
 mkdir -p %buildroot%{_datadir}/icons/hicolor/24x24/apps
