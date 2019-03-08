@@ -1,6 +1,6 @@
 Name:           electron-ssr
-Version:        0.2.4
-Release:        2
+Version:        0.2.6
+Release:        1
 Summary:        Shadowsocksr client using Electron
 License:        MIT
 Group:          Productivity/Networking/Web/Proxy
