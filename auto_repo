@@ -38,6 +38,9 @@ do
     ./rpmbuild_spec $PKG
 done
 
+# Clean up
+rm -rf ~/rpmbuild/*/*
+
 cp /dev/null $JS_FILE
 echo "var packages=[" >> $JS_FILE
 
