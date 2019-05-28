@@ -1,5 +1,5 @@
 Name:           riot-web
-Version:        1.1.1
+Version:        1.1.2
 Release:        1
 Summary:        A glossy Matrix collaboration client for the web
 License:        MIT
@@ -12,17 +12,12 @@ BuildRequires:  npm
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
-Atom is a hackable text editor for the 21st century, built on Electron, and
-based on everything we love about our favorite editors. We designed it to be
-deeply customizable, but still approachable using the default configuration.
+Riot (formerly known as Vector) is a Matrix web client built using the Matrix React SDK.
 
-Visit vector-im.io to learn more or visit the Atom forum.
-
-Follow @AtomEditor on Twitter for important announcements.
-
-This project adheres to the Contributor Covenant code of conduct. By
-participating, you are expected to uphold this code. Please report unacceptable
-behavior to vector-im@github.com.
+Riot is officially supported on the web in modern versions of Chrome, Firefox, and Safari. 
+Other browsers may work, however official support is not provided. For accessing Riot on 
+an Android or iOS device, check out riot-android and riot-ios - riot-web does not support 
+mobile devices.
 
 %prep
 %setup -q
