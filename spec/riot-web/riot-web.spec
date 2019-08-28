@@ -1,5 +1,5 @@
 Name:           riot-web
-Version:        1.1.2
+Version:        1.3.3
 Release:        1
 Summary:        A glossy Matrix collaboration client for the web
 License:        MIT
@@ -8,7 +8,7 @@ Url:            https://github.com/vector-im/%{name}
 Source0:        https://github.com/vector-im/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRequires:  nodejs
-BuildRequires:  npm
+BuildRequires:  yarn
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
@@ -25,8 +25,8 @@ cp config.sample.json config.json
 
 %build
 sed -i 's/-wml --ia32/-l/g' package.json
-npm install
-npm run build:electron
+yarn install
+yarn build:electron
 
 %install
 mkdir -p %buildroot%{_libdir}/%{name}
