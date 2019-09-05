@@ -1,0 +1,4 @@
+*.rpm
+RPM-GPG-KEY-*
+repodata
+packages.js

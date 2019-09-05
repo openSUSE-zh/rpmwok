@@ -14,7 +14,7 @@
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 SPEC_DIR=$ROOT_DIR/spec
 REPO_DIR=$ROOT_DIR/repo
-JS_FILE=$REPO_DIR/js/packages.js
+JS_FILE=$REPO_DIR/packages.js
 
 cd $ROOT_DIR
 

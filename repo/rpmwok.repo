@@ -1,0 +1,9 @@
+[rpmwok]
+name=RPMWOK
+enabled=1
+autorefresh=1
+baseurl=https://rpmwok.guoyunhe.me/
+type=yum
+gpgcheck=1
+gpgkey=https://rpmwok.guoyunhe.me/RPM-GPG-KEY-RPMWOK
+keeppackages=0

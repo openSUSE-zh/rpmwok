@@ -2,140 +2,144 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8" />
+  <title>rpmwok</title>
+  <meta name="description" content="Electron packages for openSUSE, SLE, Fedora, CentOS" />
+  <meta name="author" content="Guo Yunhe" />
 
-    <meta charset="utf-8">
-    <title>Electron RPMbuild</title>
-    <meta name="description" content="Electron packages for openSUSE, SLE, Fedora, CentOS">
-    <meta name="author" content="Guo Yunhe">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://static.opensuse.org/chameleon/dist/css/chameleon.css" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300|Inconsolata" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <link rel="icon" type="image/png" href="images/logo.png">
-
-    <style>
-        body {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 300;
-        }
-
-        h1,
-        h2,
-        h4 {
-            font-family: 'Raleway', sans-serif;
-        }
-
-        h1 {
-            font-weight: 100;
-            font-size: 2rem;
-        }
-
-        h2 {
-            font-weight: 100;
-            font-size: 1.5rem;
-        }
-
-        h4 {
-            font-weight: 300;
-            font-size: 1.2rem;
-        }
-
-        pre {
-            font-family: 'Inconsolata', monospace;
-            font-weight: 200;
-        }
-
-        img {
-            flex: 0 0 200px;
-            width: 200px;
-            max-width: 100%;
-            height: auto;
-        }
-
-        header,
-        footer {
-            text-align: center;
-        }
-
-        .container {
-            margin: auto;
-            max-width: 50rem;
-            padding: 1rem;
-        }
-
-        a {
-            color: #73ba25;
-        }
-
-        @media screen and (min-width: 768px) {
-            h1 {
-                font-size: 3.5rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            h4 {
-                font-size: 1.5rem;
-            }
-
-            header {
-                text-align: left;
-            }
-
-            header .container {
-                display: flex;
-                align-items: center;
-            }
-
-            header .text {
-                margin-left: 2rem;
-            }
-        }
-    </style>
-
+  <link rel="icon" type="image/png" href="images/logo.png" />
 </head>
 
 <body>
-
-    <header>
-        <div class="container">
-            <img src="images/logo.png" width="400" height="400" alt="Logo">
-            <div class="text">
-                <h1>Electron RPMbuild</h1>
-                <h4>Electron packages for openSUSE, SLE, Fedora, CentOS</h4>
-            </div>
+  <nav class="cross-site-navbar noprint">
+    <div class="sites">
+      <div class="menu">
+        <a class="l10n" href="https://www.opensuse.org/" data-msg-id="main">Main</a>
+        <a class="l10n" href="https://software.opensuse.org/" data-msg-id="software">Software</a>
+        <a class="l10n" href="https://doc.opensuse.org/" data-msg-id="doc">Doc</a>
+        <a class="l10n" href="https://en.opensuse.org/" data-msg-id="wiki" data-url-id="wiki-url">Wiki</a>
+        <a class="l10n" href="https://forums.opensuse.org/forumdisplay.php/842-English" data-msg-id="forum"
+          data-url-id="forum-url">Forum</a>
+        <a class="l10n" href="https://build.opensuse.org/" data-msg-id="build-service">Build service</a>
+        <a href="https://bugzilla.opensuse.org/">Bugzilla</a>
+      </div>
+      <div class="dropdown">
+        <a class="dropdown-toggle l10n" href="#" data-toggle="dropdown" data-msg-id="more">More</a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-header l10n" data-msg-id="development">
+            Development
+          </div>
+          <a class="l10n" href="https://build.opensuse.org/" data-msg-id="build-service">Build service</a>
+          <a href="https://bugzilla.opensuse.org/">Bugzilla</a>
+          <a href="https://github.com/openSUSE/">GitHub</a>
+          <a href="https://openqa.opensuse.org/">openQA</a>
+          <a href="https://weblate.opensuse.org/">Weblate</a>
+          <div class="dropdown-header l10n" data-msg-id="information">
+            Information
+          </div>
+          <a class="l10n" href="https://news.opensuse.org/" data-msg-id="news">News</a>
+          <a class="l10n" href="https://events.opensuse.org/" data-msg-id="events">Events</a>
+          <a class="l10n" href="https://planet.opensuse.org/" data-msg-id="planet">Planet</a>
+          <a class="l10n" href="https://shop.opensuse.org/" data-msg-id="shop">Shop</a>
+          <a class="l10n" href="https://status.opensuse.org/" data-msg-id="status">Status</a>
+          <div class="dropdown-header l10n" data-msg-id="community">
+            Community
+          </div>
+          <a class="l10n" href="https://www.facebook.com/groups/opensuseproject/" data-msg-id="facebook-group">Facebook
+            group</a>
+          <a class="l10n" href="https://en.opensuse.org/openSUSE:IRC_list" data-msg-id="irc-channels">IRC channels</a>
+          <a class="l10n" href="https://en.opensuse.org/openSUSE:Mailing_lists_subscription"
+            data-msg-id="mail-lists">Mail lists</a>
+          <a href="http://reddit.com/r/openSUSE/">Reddit</a>
+          <a class="l10n" href="https://t.me/opensuseusers" data-msg-id="telegram-group">Telegram Group</a>
+          <div class="dropdown-header l10n" data-msg-id="social-media">
+            Social media
+          </div>
+          <a href="https://www.facebook.com/en.openSUSE">Facebook</a>
+          <a href="https://fosstodon.org/@opensuse">Mastodon</a>
+          <a href="https://t.me/opensusenews">Telegram</a>
+          <a href="https://twitter.com/opensuse">Twitter</a>
+          <a href="https://www.youtube.com/user/opensusetv">YouTube</a>
         </div>
-    </header>
-
-    <div class="container">
-        <h2>Add repository in openSUSE &amp; SLE</h2>
-        <pre>sudo zypper ar -f https://electron-rpmbuild.guoyunhe.me/electron-rpmbuild.repo</pre>
-        <pre>sudo zypper ref</pre>
-        <h2>Add repository in Fedora &amp; CentOS</h2>
-        <pre>sudo dnf config-manager --add-repo https://electron-rpmbuild.guoyunhe.me/electron-rpmbuild.repo</pre>
-        <pre>sudo dnf config-manager --set-enabled electron-rpmbuild</pre>
+      </div>
     </div>
-
-    <div class="container">
-        <h2>Packages</h2>
-        <ul id="package-list"></ul>
+    <div class="actions">
+      <div class="custom-control custom-switch dark-mode-switch">
+        <input class="custom-control-input" id="dark-mode-input" type="checkbox" />
+        <label class="custom-control-label l10n" for="dark-mode-input" data-msg-id="dark-mode">Dark Mode</label>
+      </div>
     </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img class="mr-2" src="https://static.opensuse.org/chameleon/dist/images/logo/logo-white.svg" />
+      <span class="navbar-name">rpmwok</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="site-menu">
+      <form class="form-inline">
+        <input class="form-control l10n" type="search" data-msg-id="search" placeholder="Search" />
+      </form>
+    </div>
+  </nav>
+  <header class="py-5 text-center">
+    <div class="container">
+      <div class="text">
+        <h1>RPMWOK</h1>
+        <h4>Cook RPM packages of software that cannot be built easily on OBS</h4>
+        <img src="images/atom.svg" width="48" height="48" alt="atom" />
+        <img src="images/riot-web.svg" width="48" height="48" alt="riot-web" />
+        <img src="images/webtorrent-desktop.png" width="48" height="48" alt="webtorrent-desktop" />
+      </div>
+    </div>
+  </header>
 
-    <footer>
-        <div class="container">
-            &copy; 2018 <a href="https://guoyunhe.me">Guo Yunhe</a>
-            / <a href="https://gitlab.com/guoyunhe/electron-rpmbuild">GitLab</a>
-            / <a href="https://gitlab.com/guoyunhe/electron-rpmbuild/issues">Issues</a>
+  <div class="container">
+    <h2>Add repository in openSUSE &amp; SLE</h2>
+    <pre>
+sudo zypper ar -f https://rpmwok.guoyunhe.me/rpmwok.repo</pre>
+    <pre>sudo zypper ref</pre>
+    <h2>Add repository in Fedora &amp; CentOS</h2>
+    <pre>
+sudo dnf config-manager --add-repo https://rpmwok.guoyunhe.me/rpmwok.repo</pre>
+    <pre>sudo dnf config-manager --set-enabled rpmwok</pre>
+  </div>
+
+  <div class="container">
+    <h2>Packages</h2>
+    <ul id="package-list"></ul>
+  </div>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 text-left">
+          &copy; 2018&ndash;2019 Guo Yunhe and others
         </div>
-    </footer>
+        <div class="col-6 text-right"><a href="https://github.com/opensuse-zh/rpmwok">GitHub</a></div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/packages.js"></script>
-    <script src="js/package-list.js"></script>
+  <script src="https://rpmwok.guoyunhe.me/js/packages.js"></script>
+  <script>
+    var packageList = document.getElementById('package-list');
+    packages.map(function (pkg) {
+      var packageItem = document.createElement('li');
+      var packageLink = document.createElement('a');
+      var packageName = document.createTextNode(pkg);
+      packageLink.appendChild(packageName);
+      packageLink.href = pkg;
+      packageLink.download = pkg;
+      packageItem.appendChild(packageLink);
+      packageList.appendChild(packageItem);
+    })</script>
+  <script src="https://static.opensuse.org/chameleon/dist/js/chameleon.js"></script>
 </body>
 
 </html>
