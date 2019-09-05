@@ -1,5 +1,5 @@
 Name:           electronic-wechat
-Version:        2.0
+Version:        V2.0
 Release:        2
 Summary:        A better WeChat on macOS and Linux. Built with Electron.
 License:        MIT
