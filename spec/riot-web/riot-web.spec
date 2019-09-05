@@ -7,8 +7,6 @@ Group:          Productivity/Networking/Instant Messenger
 Url:            https://github.com/vector-im/%{name}
 Source0:        https://github.com/vector-im/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
-BuildRequires:  nodejs
-BuildRequires:  yarn
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
