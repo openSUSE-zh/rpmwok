@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Riot
 GenericName=Matrix Client
-GenericName[zh_CN]=Matrix 客户的
+GenericName[zh_CN]=Matrix 客户端
 Comment=Matrix client built using the Matrix React SDK
 Comment[zh_CN]=使用 Matrix React SDK 构建的 Matrix 客户端
 Exec=riot-web %U

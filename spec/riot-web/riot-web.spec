@@ -4,8 +4,8 @@ Release:        1
 Summary:        A glossy Matrix collaboration client for the web
 License:        MIT
 Group:          Productivity/Networking/Instant Messenger
-Url:            https://github.com/vector-im/%{name}
-Source0:        https://github.com/vector-im/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Url:            https://github.com/vector-im/riot-web
+Source0:        https://github.com/vector-im/riot-web/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 

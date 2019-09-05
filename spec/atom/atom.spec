@@ -1,11 +1,11 @@
 Name:           atom
-Version:        1.37.0
+Version:        1.40.1
 Release:        1
 Summary:        The hackable text editor
 License:        MIT
 Group:          Productivity/Text/Editors
-Url:            https://github.com/atom/%{name}
-Source0:        https://github.com/atom/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Url:            https://github.com/atom/atom
+Source0:        https://github.com/atom/atom/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRequires:  nodejs
 BuildRequires:  nodejs-devel

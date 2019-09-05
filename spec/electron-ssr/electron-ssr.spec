@@ -4,8 +4,8 @@ Release:        1
 Summary:        Shadowsocksr client using Electron
 License:        MIT
 Group:          Productivity/Networking/Web/Proxy
-Url:            https://github.com/erguotou520/%{name}
-Source0:        https://github.com/erguotou520/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Url:            https://github.com/erguotou520/electron-ssr
+Source0:        https://github.com/erguotou520/electron-ssr/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRequires:  nodejs
 BuildRequires:  npm

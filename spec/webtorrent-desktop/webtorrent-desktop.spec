@@ -4,8 +4,8 @@ Release:        1
 Summary:        The streaming torrent app. For Mac, Windows, and Linux.
 License:        MIT
 Group:          Productivity/Networking/Other
-Url:            https://github.com/webtorrent/%{name}
-Source0:        https://github.com/webtorrent/%{name}/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Url:            https://github.com/webtorrent/webtorrent-desktop
+Source0:        https://github.com/webtorrent/webtorrent-desktop/archive/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildRequires:  nodejs
 BuildRequires:  npm
 BuildRequires:  zip

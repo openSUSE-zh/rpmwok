@@ -35,8 +35,12 @@ cd $ROOT_DIR
 # Up-to-date packages will be skipped to save time and resources
 for PKG in $PACKAGES
 do
+    ./latest_release $PKG
     ./rpmbuild_spec $PKG
 done
+
+git add .
+git commit -m "update package version"
 
 # Clean up
 rm -rf ~/rpmbuild/*/*

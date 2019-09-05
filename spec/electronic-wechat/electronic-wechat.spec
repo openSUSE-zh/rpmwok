@@ -4,8 +4,8 @@ Release:        2
 Summary:        A better WeChat on macOS and Linux. Built with Electron.
 License:        MIT
 Group:          Productivity/Networking/Instant Messenger
-Url:            https://github.com/geeeeeeeeek/%{name}
-Source0:        https://github.com/geeeeeeeeek/%{name}/archive/V%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Url:            https://github.com/geeeeeeeeek/electronic-wechat
+Source0:        https://github.com/geeeeeeeeek/electronic-wechat/archive/V%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:        %{name}.desktop
 BuildRequires:  nodejs
 BuildRequires:  npm
