@@ -41,6 +41,7 @@ done
 
 git add .
 git commit -m "update package version"
+git push
 
 # Clean up
 rm -rf ~/rpmbuild/*/*
