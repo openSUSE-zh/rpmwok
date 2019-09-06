@@ -18,7 +18,7 @@ const githubMatch = /github.com\/([\w-]+)\/([\w-]+)/.exec(specFileContent);
 
 if (!githubMatch) {
     console.log("No GitHub URL found in spec file " + specFilePath);
-    process.exit(1);
+    process.exit();
 }
 
 const githubOwner = githubMatch[1];
@@ -37,7 +37,14 @@ https.get(
 
         // The whole response has been received. Print out the result.
         res.on('end', () => {
-            const version = JSON.parse(data).tag_name.replace(/v/ig, '');
+            const result = JSON.parse(data);
+
+            if (!result.tag_name) {
+                console.log("Repository was not found on GitHub.")
+                process.exit(0);
+            }
+
+            const version = result.tag_name.replace(/v/ig, '');
             const newSpecFileContent = specFileContent.replace(/Version:\s+.+/, 'Version:        ' + version);
             if (newSpecFileContent !== specFileContent) {
                 fs.writeFileSync(specFilePath, newSpecFileContent, { encoding: 'utf-8' });
