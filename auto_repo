@@ -18,8 +18,6 @@ JS_FILE=$REPO_DIR/packages.js
 
 cd $ROOT_DIR
 
-# Update NPM
-sudo npm i -g npm
 # Git sync
 git pull
 # Install BuildRequeires
