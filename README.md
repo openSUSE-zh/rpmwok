@@ -18,8 +18,9 @@ Ordered by names
 - createrepo
 - wget
 
-```bash
+```
 sudo zypper in git nodejs npm rpm rpm-build createrepo wget
+sudo npm install -g yarn
 ```
 
 ## How to add and build a new package
