@@ -16,6 +16,11 @@ Ordered by names
 - rpm
 - rpm-build
 - createrepo
+- wget
+
+```bash
+sudo zypper in git nodejs npm rpm rpm-build createrepo wget
+```
 
 ## How to add and build a new package
 
