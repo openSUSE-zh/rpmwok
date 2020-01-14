@@ -1,0 +1,20 @@
+#!/bin/bash
+
+cd repo
+
+# Microsoft
+rm -rf ms-repos
+mkdir -p ms-repos
+cd ms-repos
+wget -r -np -I /yumrepos/azure-cli,/yumrepos/ms-teams,/yumrepos/vs-code https://packages.microsoft.com/yumrepos/
+find . -name "*.rpm" -type f -exec cp {} .. \;
+cd ..
+rm -rf ms-repos
+
+# Slack
+SLACK_URL=$(curl https://slack.com/intl/en-fi/downloads/instructions/fedora | grep -Po 'http.+\.rpm')
+wget $SLACK_URL
+
+# Remove duplicates
+rm -f *.1 *.2 *.3
+cd ..

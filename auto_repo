@@ -44,6 +44,9 @@ git push
 # Clean up
 rm -rf ~/rpmbuild/*/*
 
+# Download RPMS
+./download_rpms
+
 cp /dev/null $JS_FILE
 echo "var packages=[" >> $JS_FILE
 
