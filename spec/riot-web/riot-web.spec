@@ -23,8 +23,8 @@ cp config.sample.json config.json
 
 %build
 sed -i 's/-wml --ia32/-l/g' package.json
-npm install
-npm run build:electron
+yarn install
+yarn build:electron
 
 %install
 mkdir -p %buildroot%{_libdir}/%{name}
