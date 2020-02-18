@@ -1,6 +1,4 @@
 Already up to date.
-Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [..done]
-Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 'glibc-devel' is already installed.
@@ -46,5 +44,13 @@ atom-1.44.0-1.x86_64.rpm exists. Skip.
 electronic-wechat-2.0-2.x86_64.rpm exists. Skip.
 Repository was not found on GitHub.
 electron-ssr-0.2.6-1.x86_64.rpm exists. Skip.
-riot-web-1.5.8-1.x86_64.rpm exists. Skip.
+Downloading riot-web-1.5.9.tar.gz
+Done
+Building riot-web
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.6dQ5KB
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.YcWRj1
+
+
+RPM build errors:
+Done
 webtorrent-desktop-0.21.0-1.x86_64.rpm exists. Skip.
