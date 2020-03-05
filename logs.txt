@@ -1,6 +1,8 @@
 Already up to date.
-Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [..done]
+Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [.done]
 Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
+Retrieving repository 'openSUSE-Leap-15.1-Update-Non-Oss' metadata [.done]
+Building repository 'openSUSE-Leap-15.1-Update-Non-Oss' cache [....done]
 Loading repository data...
 Reading installed packages...
 'glibc-devel' is already installed.
@@ -47,11 +49,11 @@ electronic-wechat-2.0-2.x86_64.rpm exists. Skip.
 Repository was not found on GitHub.
 electron-ssr-0.2.6-1.x86_64.rpm exists. Skip.
 motrix-1.4.1-1.x86_64.rpm exists. Skip.
-Downloading riot-web-1.5.11.tar.gz
+Downloading riot-web-1.5.12.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.LNJU6w
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.UBQbwH
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.FUCb3u
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.At71F3
 
 
 RPM build errors:
