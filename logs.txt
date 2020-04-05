@@ -1,4 +1,6 @@
 Already up to date.
+Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [...done]
+Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 'glibc-devel' is already installed.
@@ -48,8 +50,8 @@ motrix-1.4.1-1.x86_64.rpm exists. Skip.
 Downloading riot-web-1.5.15.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Dy2O1H
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.WqzewL
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.SkNSJV
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.Lu5ZVy
 
 
 RPM build errors:
