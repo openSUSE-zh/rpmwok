@@ -7,12 +7,12 @@ Reading installed packages...
 No update candidate for 'glibc-devel-2.26-lp151.19.11.1.x86_64'. The highest available version is already installed.
 'gcc' is already installed.
 No update candidate for 'gcc-7-lp151.3.5.x86_64'. The highest available version is already installed.
+'git-core' is already installed.
+No update candidate for 'git-core-2.16.4-lp151.4.6.1.x86_64'. The highest available version is already installed.
 'gcc-c++' is already installed.
 No update candidate for 'gcc-c++-7-lp151.3.5.x86_64'. The highest available version is already installed.
 'make' is already installed.
 No update candidate for 'make-4.2.1-lp151.7.39.x86_64'. The highest available version is already installed.
-'rpm' is already installed.
-No update candidate for 'rpm-4.14.1-lp151.13.10.x86_64'. The highest available version is already installed.
 'zip' is already installed.
 No update candidate for 'zip-3.0-lp151.3.3.x86_64'. The highest available version is already installed.
 'nodejs' not found in package names. Trying capabilities.
@@ -40,18 +40,23 @@ No update candidate for 'libsecret-devel-0.18.7-lp151.1.1.x86_64'. The highest a
 Resolving package dependencies...
 
 The following package is going to be upgraded:
-  git-core
+  rpm
 
 1 package to upgrade.
-Overall download size: 3.8 MiB. Already cached: 0 B. After the operation, additional 12.0 KiB will be used.
+Overall download size: 1.6 MiB. Already cached: 0 B. After the operation, additional 89.0 B will be used.
 Continue? [y/n/v/...? shows all options] (y): y
-Retrieving package git-core-2.16.4-lp151.4.6.1.x86_64 (1/1),   3.8 MiB ( 23.2 MiB unpacked)
-Retrieving delta: ./x86_64/git-core-2.16.4-lp151.4.3.1_lp151.4.6.1.x86_64.drpm, 1.1 MiB
-Retrieving: git-core-2.16.4-lp151.4.3.1_lp151.4.6.1.x86_64.drpm [done]
-Applying delta: ./git-core-2.16.4-lp151.4.3.1_lp151.4.6.1.x86_64.drpm [............................done]
+Retrieving package rpm-4.14.1-lp151.14.3.1.x86_64 (1/1),   1.6 MiB (  4.6 MiB unpacked)
+Retrieving delta: ./x86_64/rpm-4.14.1-lp151.13.10_lp151.14.3.1.x86_64.drpm, 108.4 KiB
+Retrieving: rpm-4.14.1-lp151.13.10_lp151.14.3.1.x86_64.drpm [done]
+Applying delta: ./rpm-4.14.1-lp151.13.10_lp151.14.3.1.x86_64.drpm [.......................done]
 
 Checking for file conflicts: [......done]
-(1/1) Installing: git-core-2.16.4-lp151.4.6.1.x86_64 [...................done]
+(1/1) Installing: rpm-4.14.1-lp151.14.3.1.x86_64 [...................done]
+Additional rpm output:
+Updating /etc/sysconfig/services ...
+
+
+Executing %posttrans script 'rpm-4.14.1-lp151.14.3.1.x86_64.rpm' [....done]
  
 atom-1.45.0-1.x86_64.rpm exists. Skip.
 electronic-wechat-2.0-2.x86_64.rpm exists. Skip.
@@ -61,8 +66,8 @@ motrix-1.4.1-1.x86_64.rpm exists. Skip.
 Downloading riot-web-1.5.15.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.1V8Uw7
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.fpyw1X
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.sw6di7
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.lKAmIO
 
 
 RPM build errors:
