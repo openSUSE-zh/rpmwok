@@ -1,5 +1,5 @@
 Already up to date.
-Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [...done]
+Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [.....done]
 Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -7,6 +7,8 @@ Reading installed packages...
 No update candidate for 'glibc-devel-2.26-lp151.19.11.1.x86_64'. The highest available version is already installed.
 'gcc' is already installed.
 No update candidate for 'gcc-7-lp151.3.5.x86_64'. The highest available version is already installed.
+'git-core' is already installed.
+No update candidate for 'git-core-2.26.1-lp151.4.9.1.x86_64'. The highest available version is already installed.
 'gcc-c++' is already installed.
 No update candidate for 'gcc-c++-7-lp151.3.5.x86_64'. The highest available version is already installed.
 'make' is already installed.
@@ -39,81 +41,7 @@ No update candidate for 'libXss-devel-1.2.2-lp151.4.2.x86_64'. The highest avail
 No update candidate for 'libsecret-devel-0.18.7-lp151.1.1.x86_64'. The highest available version is already installed.
 Resolving package dependencies...
 
-The following 11 NEW packages are going to be installed:
-  perl-CGI perl-Encode-Locale perl-HTML-Parser perl-HTML-Tagset perl-HTTP-Date perl-HTTP-Message perl-IO-HTML perl-LWP-MediaTypes perl-MailTools perl-TimeDate perl-URI
-
-The following 8 packages are going to be upgraded:
-  git git-core git-cvs git-email git-gui gitk git-svn git-web
-
-8 packages to upgrade, 11 new.
-Overall download size: 7.5 MiB. Already cached: 0 B. After the operation, additional 9.4 MiB will be used.
-Continue? [y/n/v/...? shows all options] (y): y
-Retrieving package perl-Encode-Locale-1.05-lp151.2.1.noarch (1/19),  23.0 KiB ( 19.3 KiB unpacked)
-Retrieving: perl-Encode-Locale-1.05-lp151.2.1.noarch.rpm [done]
-Retrieving package perl-HTML-Tagset-3.20-lp151.2.1.noarch (2/19),  18.5 KiB ( 18.6 KiB unpacked)
-Retrieving: perl-HTML-Tagset-3.20-lp151.2.1.noarch.rpm [done]
-Retrieving package perl-IO-HTML-1.001-lp151.2.1.noarch (3/19),  26.6 KiB ( 42.0 KiB unpacked)
-Retrieving: perl-IO-HTML-1.001-lp151.2.1.noarch.rpm [done]
-Retrieving package perl-LWP-MediaTypes-6.02-lp151.2.1.noarch (4/19),  27.4 KiB ( 60.7 KiB unpacked)
-Retrieving: perl-LWP-MediaTypes-6.02-lp151.2.1.noarch.rpm [done]
-Retrieving package perl-URI-1.73-lp151.2.1.noarch (5/19), 110.8 KiB (211.1 KiB unpacked)
-Retrieving: perl-URI-1.73-lp151.2.1.noarch.rpm [done]
-Retrieving package git-core-2.26.1-lp151.4.9.1.x86_64 (6/19),   4.9 MiB ( 30.4 MiB unpacked)
-Retrieving: git-core-2.26.1-lp151.4.9.1.x86_64.rpm [.done (5.5 MiB/s)]
-Retrieving package perl-TimeDate-2.30-lp151.3.6.1.noarch (7/19),  49.3 KiB ( 93.6 KiB unpacked)
-Retrieving: perl-TimeDate-2.30-lp151.3.6.1.noarch.rpm [done]
-Retrieving package gitk-2.26.1-lp151.4.9.1.x86_64 (8/19), 213.4 KiB (767.5 KiB unpacked)
-Retrieving delta: ./x86_64/gitk-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm, 86.5 KiB
-Retrieving: gitk-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm [done]
-Applying delta: ./gitk-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm [.....................done]
-Retrieving package git-svn-2.26.1-lp151.4.9.1.x86_64 (9/19), 831.8 KiB (  1.8 MiB unpacked)
-Retrieving: git-svn-2.26.1-lp151.4.9.1.x86_64.rpm [done]
-Retrieving package git-gui-2.26.1-lp151.4.9.1.x86_64 (10/19), 279.4 KiB (  1.2 MiB unpacked)
-Retrieving delta: ./x86_64/git-gui-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm, 97.0 KiB
-Retrieving: git-gui-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm [done]
-Applying delta: ./git-gui-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm [..............................done]
-Retrieving package git-cvs-2.26.1-lp151.4.9.1.x86_64 (11/19), 140.0 KiB (215.6 KiB unpacked)
-Retrieving: git-cvs-2.26.1-lp151.4.9.1.x86_64.rpm [done]
-Retrieving package perl-MailTools-2.19-lp151.2.1.noarch (12/19), 102.1 KiB (199.7 KiB unpacked)
-Retrieving: perl-MailTools-2.19-lp151.2.1.noarch.rpm [done]
-Retrieving package perl-HTTP-Date-6.02-lp151.2.1.noarch (13/19),  16.4 KiB ( 19.0 KiB unpacked)
-Retrieving: perl-HTTP-Date-6.02-lp151.2.1.noarch.rpm [done]
-Retrieving package perl-HTTP-Message-6.14-lp151.2.1.noarch (14/19), 103.3 KiB (196.3 KiB unpacked)
-Retrieving: perl-HTTP-Message-6.14-lp151.2.1.noarch.rpm [done]
-Retrieving package perl-HTML-Parser-3.72-lp151.2.3.x86_64 (15/19), 104.5 KiB (213.5 KiB unpacked)
-Retrieving: perl-HTML-Parser-3.72-lp151.2.3.x86_64.rpm [done]
-Retrieving package git-email-2.26.1-lp151.4.9.1.x86_64 (16/19), 102.2 KiB ( 64.5 KiB unpacked)
-Retrieving: git-email-2.26.1-lp151.4.9.1.x86_64.rpm [done]
-Retrieving package perl-CGI-4.46-lp151.3.3.1.noarch (17/19), 213.6 KiB (548.2 KiB unpacked)
-Retrieving: perl-CGI-4.46-lp151.3.3.1.noarch.rpm [done]
-Retrieving package git-web-2.26.1-lp151.4.9.1.x86_64 (18/19), 157.4 KiB (323.3 KiB unpacked)
-Retrieving delta: ./x86_64/git-web-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm, 76.8 KiB
-Retrieving: git-web-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm [done]
-Applying delta: ./git-web-2.16.4_2.26.1-lp151.4.6.1_lp151.4.9.1.x86_64.drpm [.......................................done]
-Retrieving package git-2.26.1-lp151.4.9.1.x86_64 (19/19),  79.5 KiB (  3.2 KiB unpacked)
-Retrieving: git-2.26.1-lp151.4.9.1.x86_64.rpm [done]
-
-Checking for file conflicts: [.......done]
-( 1/19) Installing: perl-Encode-Locale-1.05-lp151.2.1.noarch [......done]
-( 2/19) Installing: perl-HTML-Tagset-3.20-lp151.2.1.noarch [......done]
-( 3/19) Installing: perl-IO-HTML-1.001-lp151.2.1.noarch [......done]
-( 4/19) Installing: perl-LWP-MediaTypes-6.02-lp151.2.1.noarch [......done]
-( 5/19) Installing: perl-URI-1.73-lp151.2.1.noarch [...........done]
-( 6/19) Installing: git-core-2.26.1-lp151.4.9.1.x86_64 [...................done]
-( 7/19) Installing: perl-TimeDate-2.30-lp151.3.6.1.noarch [...........done]
-( 8/19) Installing: gitk-2.26.1-lp151.4.9.1.x86_64 [...................done]
-( 9/19) Installing: git-svn-2.26.1-lp151.4.9.1.x86_64 [............done]
-(10/19) Installing: git-gui-2.26.1-lp151.4.9.1.x86_64 [...................done]
-(11/19) Installing: git-cvs-2.26.1-lp151.4.9.1.x86_64 [..............done]
-(12/19) Installing: perl-MailTools-2.19-lp151.2.1.noarch [...........done]
-(13/19) Installing: perl-HTTP-Date-6.02-lp151.2.1.noarch [......done]
-(14/19) Installing: perl-HTTP-Message-6.14-lp151.2.1.noarch [..........done]
-(15/19) Installing: perl-HTML-Parser-3.72-lp151.2.3.x86_64 [.........done]
-(16/19) Installing: git-email-2.26.1-lp151.4.9.1.x86_64 [.........done]
-(17/19) Installing: perl-CGI-4.46-lp151.3.3.1.noarch [...........done]
-(18/19) Installing: git-web-2.26.1-lp151.4.9.1.x86_64 [................done]
-(19/19) Installing: git-2.26.1-lp151.4.9.1.x86_64 [........done]
- 
+Nothing to do.
 atom-1.45.0-1.x86_64.rpm exists. Skip.
 electronic-wechat-2.0-2.x86_64.rpm exists. Skip.
 Repository was not found on GitHub.
@@ -122,8 +50,8 @@ motrix-1.4.1-1.x86_64.rpm exists. Skip.
 Downloading riot-web-1.5.15.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.RhFu5A
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.7Sr801
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.tT1X2h
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.xstTYN
 
 
 RPM build errors:
