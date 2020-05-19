@@ -1,5 +1,5 @@
 Name:           motrix
-Version:        1.4.1
+Version:        1.5.10
 Release:        1
 Summary:        A full-featured download manager
 License:        MIT
