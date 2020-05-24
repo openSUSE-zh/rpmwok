@@ -1,5 +1,5 @@
 Already up to date.
-Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [....done]
+Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [......done]
 Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -52,8 +52,8 @@ motrix-1.5.10-1.x86_64.rpm exists. Skip.
 Downloading riot-web-1.6.2.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.ZI94j5
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.uPIT9X
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.2ziFWx
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.x9Vu6J
 
 
 RPM build errors:
