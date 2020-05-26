@@ -1,14 +1,14 @@
 Already up to date.
 Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [..done]
 Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
-Retrieving repository 'openSUSE-Leap-15.1-Update-Non-Oss' metadata [.done]
-Building repository 'openSUSE-Leap-15.1-Update-Non-Oss' cache [....done]
 Loading repository data...
 Reading installed packages...
 'glibc-devel' is already installed.
 No update candidate for 'glibc-devel-2.26-lp151.19.11.1.x86_64'. The highest available version is already installed.
 'gcc' is already installed.
 No update candidate for 'gcc-7-lp151.3.5.x86_64'. The highest available version is already installed.
+'git-core' is already installed.
+No update candidate for 'git-core-2.26.2-lp151.4.12.1.x86_64'. The highest available version is already installed.
 'gcc-c++' is already installed.
 No update candidate for 'gcc-c++-7-lp151.3.5.x86_64'. The highest available version is already installed.
 'make' is already installed.
@@ -43,51 +43,7 @@ No update candidate for 'libsecret-devel-0.18.7-lp151.1.1.x86_64'. The highest a
 No update candidate for 'dotnet-sdk-3.1-3.1.300-1.x86_64'. The highest available version is already installed.
 Resolving package dependencies...
 
-The following 8 packages are going to be upgraded:
-  git git-core git-cvs git-email git-gui gitk git-svn git-web
-
-8 packages to upgrade.
-Overall download size: 6.7 MiB. Already cached: 0 B. After the operation, additional 301.0 B will be used.
-Continue? [y/n/v/...? shows all options] (y): y
-Retrieving package git-core-2.26.2-lp151.4.12.1.x86_64 (1/8),   4.9 MiB ( 30.4 MiB unpacked)
-Retrieving delta: ./x86_64/git-core-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm, 1.1 MiB
-Retrieving: git-core-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [done]
-Applying delta: ./git-core-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [.........................................done]
-Retrieving package gitk-2.26.2-lp151.4.12.1.x86_64 (2/8), 214.2 KiB (767.5 KiB unpacked)
-Retrieving delta: ./x86_64/gitk-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm, 80.2 KiB
-Retrieving: gitk-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [done]
-Applying delta: ./gitk-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [....done]
-Retrieving package git-web-2.26.2-lp151.4.12.1.x86_64 (3/8), 158.2 KiB (323.3 KiB unpacked)
-Retrieving delta: ./x86_64/git-web-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm, 76.4 KiB
-Retrieving: git-web-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [done]
-Applying delta: ./git-web-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [....done]
-Retrieving package git-svn-2.26.2-lp151.4.12.1.x86_64 (4/8), 832.7 KiB (  1.8 MiB unpacked)
-Retrieving delta: ./x86_64/git-svn-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm, 116.2 KiB
-Retrieving: git-svn-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [done]
-Applying delta: ./git-svn-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [........done]
-Retrieving package git-gui-2.26.2-lp151.4.12.1.x86_64 (5/8), 280.3 KiB (  1.2 MiB unpacked)
-Retrieving delta: ./x86_64/git-gui-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm, 85.2 KiB
-Retrieving: git-gui-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [done]
-Applying delta: ./git-gui-2.26.1_2.26.2-lp151.4.9.1_lp151.4.12.1.x86_64.drpm [....done]
-Retrieving package git-email-2.26.2-lp151.4.12.1.x86_64 (6/8), 103.0 KiB ( 64.5 KiB unpacked)
-Retrieving: git-email-2.26.2-lp151.4.12.1.x86_64.rpm [done]
-Retrieving package git-cvs-2.26.2-lp151.4.12.1.x86_64 (7/8), 140.8 KiB (215.6 KiB unpacked)
-Retrieving: git-cvs-2.26.2-lp151.4.12.1.x86_64.rpm [done]
-Retrieving package git-2.26.2-lp151.4.12.1.x86_64 (8/8),  80.3 KiB (  3.2 KiB unpacked)
-Retrieving: git-2.26.2-lp151.4.12.1.x86_64.rpm [done]
-
-Checking for file conflicts: [......done]
-(1/8) Installing: git-core-2.26.2-lp151.4.12.1.x86_64 [...................done]
-(2/8) Installing: gitk-2.26.2-lp151.4.12.1.x86_64 [.................done]
-(3/8) Installing: git-web-2.26.2-lp151.4.12.1.x86_64 [................done]
-(4/8) Installing: git-svn-2.26.2-lp151.4.12.1.x86_64 [............done]
-(5/8) Installing: git-gui-2.26.2-lp151.4.12.1.x86_64 [...................done]
-(6/8) Installing: git-email-2.26.2-lp151.4.12.1.x86_64 [.........done]
-(7/8) Installing: git-cvs-2.26.2-lp151.4.12.1.x86_64 [..............done]
-(8/8) Installing: git-2.26.2-lp151.4.12.1.x86_64 [........done]
- 
-Core libraries or services have been updated.
-Reboot is required to ensure that your system benefits from these updates.
+Nothing to do.
 atom-1.47.0-1.x86_64.rpm exists. Skip.
 electronic-wechat-2.0-2.x86_64.rpm exists. Skip.
 Repository was not found on GitHub.
@@ -96,8 +52,8 @@ motrix-1.5.10-1.x86_64.rpm exists. Skip.
 Downloading riot-web-1.6.2.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.ANdw5J
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.HQagS9
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.QCWx37
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.hsPgaJ
 
 
 RPM build errors:
