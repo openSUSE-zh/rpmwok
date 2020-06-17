@@ -1,5 +1,5 @@
 Name:           riot-web
-Version:        1.6.4
+Version:        1.6.5
 Release:        1
 Summary:        A glossy Matrix collaboration client for the web
 License:        MIT
