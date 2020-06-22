@@ -50,8 +50,8 @@ motrix-1.5.15-1.x86_64.rpm exists. Skip.
 Downloading riot-web-1.6.5.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.NdWJx1
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.frTGkl
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.xV3Jdw
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.iv4v06
 
 
 RPM build errors:
