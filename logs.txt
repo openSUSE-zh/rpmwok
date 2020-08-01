@@ -1,5 +1,5 @@
 Already up to date.
-Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [..done]
+Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [...done]
 Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -49,11 +49,11 @@ electronic-wechat-2.0-2.x86_64.rpm exists. Skip.
 Repository was not found on GitHub.
 electron-ssr-0.2.6-1.x86_64.rpm exists. Skip.
 motrix-1.5.15-1.x86_64.rpm exists. Skip.
+Repository was not found on GitHub.
 Downloading riot-web-1.7.2.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.9hV1cm
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.foo00h
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.dZffdb
 
 
 RPM build errors:
