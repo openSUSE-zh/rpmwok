@@ -51,7 +51,7 @@ Repository was not found on GitHub.
 Downloading riot-web-1.7.2.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.CyzIpK
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.k1ybcI
 
 
 RPM build errors:
