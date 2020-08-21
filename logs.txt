@@ -1,4 +1,6 @@
 Already up to date.
+Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [..done]
+Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
 Loading repository data...
 Reading installed packages...
 'glibc-devel' is already installed.
@@ -51,7 +53,7 @@ Repository was not found on GitHub.
 Downloading riot-web-1.7.2.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.k1ybcI
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.lYQWeE
 
 
 RPM build errors:
