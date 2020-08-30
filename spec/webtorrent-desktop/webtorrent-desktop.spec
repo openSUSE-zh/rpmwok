@@ -1,5 +1,5 @@
 Name:           webtorrent-desktop
-Version:        0.23.0
+Version:        0.24.0
 Release:        1
 Summary:        The streaming torrent app. For Mac, Windows, and Linux.
 License:        MIT
