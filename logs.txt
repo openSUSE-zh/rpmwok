@@ -1,5 +1,5 @@
 Already up to date.
-Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [..done]
+Retrieving repository 'openSUSE-Leap-15.1-Update' metadata [...done]
 Building repository 'openSUSE-Leap-15.1-Update' cache [....done]
 Loading repository data...
 Reading installed packages...
@@ -53,7 +53,7 @@ Repository was not found on GitHub.
 Downloading riot-web-1.7.2.tar.gz
 Done
 Building riot-web
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.MYpP0u
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.hOEsPo
 
 
 RPM build errors:
@@ -63,150 +63,4 @@ Downloading
 Done
 Building Ryujinx
 Done
-Downloading webtorrent-desktop-0.24.0.tar.gz
-Done
-Building webtorrent-desktop
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Lw1N35
-
-> bufferutil@4.0.1 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/bufferutil
-> node-gyp-build
-
-
-> utf-8-validate@5.0.2 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/utf-8-validate
-> node-gyp-build
-
-
-> electron-chromedriver@9.0.0 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/electron-chromedriver
-> node ./download-chromedriver.js
-
-
-> core-js@2.6.11 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/core-js
-> node -e "try{require('./postinstall')}catch(e){}"
-
-[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
-
-[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
-[96m>[94m https://opencollective.com/core-js [0m
-[96m>[94m https://www.patreon.com/zloirock [0m
-
-[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
-
-
-> core-js@3.6.5 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/global-agent/node_modules/core-js
-> node -e "try{require('./postinstall')}catch(e){}"
-
-
-> protobufjs@6.10.1 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/protobufjs
-> node scripts/postinstall
-
-
-> electron@10.1.0 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/electron
-> node install.js
-
-
-> nodemon@2.0.4 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/nodemon
-> node bin/postinstall || exit 0
-
-[32mLove nodemon? You can now support the project via the open collective:[22m[39m
- > [96m[1mhttps://opencollective.com/nodemon/donate[0m
-
-
-> spectron@11.1.0 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/spectron
-> node lib/rpath-fix.js
-
-added 1187 packages from 678 contributors and audited 1223 packages in 34.488s
-
-104 packages are looking for funding
-  run `npm fund` for details
-
-found 0 vulnerabilities
-
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.w9nBnp
-
-> webtorrent-desktop@0.24.0 build /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0
-> buble src --target chrome:71 --output build
-
-
-> webtorrent-desktop@0.24.0 package /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0
-> node ./bin/package.js "linux" "zip"
-
-Installing node_modules...
-
-> utf-8-validate@5.0.2 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/utf-8-validate
-> node-gyp-build
-
-
-> bufferutil@4.0.1 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/bufferutil
-> node-gyp-build
-
-
-> core-js@2.6.11 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/core-js
-> node -e "try{require('./postinstall')}catch(e){}"
-
-
-> protobufjs@6.10.1 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/protobufjs
-> node scripts/postinstall
-
-
-> fs-xattr@0.3.1 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/fs-xattr
-> node-gyp rebuild
-
-make: Entering directory '/home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/fs-xattr/build'
-  CC(target) Release/obj.target/xattr/src/async.o
-  CC(target) Release/obj.target/xattr/src/error.o
-  CC(target) Release/obj.target/xattr/src/sync.o
-  CC(target) Release/obj.target/xattr/src/util.o
-  CC(target) Release/obj.target/xattr/src/xattr.o
-  SOLINK_MODULE(target) Release/obj.target/xattr.node
-  COPY Release/xattr.node
-make: Leaving directory '/home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/fs-xattr/build'
-
-> macos-alias@0.2.11 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/macos-alias
-> node-gyp rebuild
-
-make: Entering directory '/home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/macos-alias/build'
-  CXX(target) Release/obj.target/volume/src/volume.o
-make: Leaving directory '/home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/macos-alias/build'
-
-> core-js@3.6.5 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/global-agent/node_modules/core-js
-> node -e "try{require('./postinstall')}catch(e){}"
-
-
-> electron-chromedriver@9.0.0 install /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/electron-chromedriver
-> node ./download-chromedriver.js
-
-
-> spectron@11.1.0 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/spectron
-> node lib/rpath-fix.js
-
-
-> nodemon@2.0.4 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/nodemon
-> node bin/postinstall || exit 0
-
-
-> electron@10.1.0 postinstall /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/node_modules/electron
-> node install.js
-
-added 1213 packages in 19.667s
-Nuking dist/ and build/...
-Build: Transpiling to ES5...
-
-> webtorrent-desktop@0.24.0 build /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0
-> buble src --target chrome:71 --output build
-
-Build: Transpiled to ES5.
-Linux: Packaging electron...
-Linux: Packaged electron. /home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/dist/WebTorrent-linux-x64,/home/sisu/rpmbuild/BUILD/webtorrent-desktop-0.24.0/dist/WebTorrent-linux-arm64
-Linux: Creating amd64 deb...
-Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.x6BBFy
-Processing files: webtorrent-desktop-0.24.0-1.x86_64
-Executing(%doc): /bin/sh -e /var/tmp/rpm-tmp.a9PJ3I
-Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.75YosT
-Provides: application() application(webtorrent-desktop.desktop) libEGL.so()(64bit) libGLESv2.so()(64bit) libffmpeg.so()(64bit) libvk_swiftshader.so()(64bit) libvulkan.so()(64bit) mimehandler(application/x-bittorrent) mimehandler(x-scheme-handler/magnet) mimehandler(x-scheme-handler/stream-magnet) webtorrent-desktop = 0.24.0-1 webtorrent-desktop(x86-64) = 0.24.0-1
-Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
-Requires: ld-linux-x86-64.so.2()(64bit) ld-linux-x86-64.so.2(GLIBC_2.2.5)(64bit) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) libX11-xcb.so.1()(64bit) libX11.so.6()(64bit) libXcomposite.so.1()(64bit) libXcursor.so.1()(64bit) libXdamage.so.1()(64bit) libXext.so.6()(64bit) libXfixes.so.3()(64bit) libXi.so.6()(64bit) libXrandr.so.2()(64bit) libXrender.so.1()(64bit) libXtst.so.6()(64bit) libasound.so.2()(64bit) libasound.so.2(ALSA_0.9)(64bit) libasound.so.2(ALSA_0.9.0rc4)(64bit) libatk-1.0.so.0()(64bit) libatk-bridge-2.0.so.0()(64bit) libatspi.so.0()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.10)(64bit) libc.so.6(GLIBC_2.11)(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.15)(64bit) libc.so.6(GLIBC_2.16)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.3)(64bit) libc.so.6(GLIBC_2.3.2)(64bit) libc.so.6(GLIBC_2.3.3)(64bit) libc.so.6(GLIBC_2.3.4)(64bit) libc.so.6(GLIBC_2.4)(64bit) libc.so.6(GLIBC_2.6)(64bit) libc.so.6(GLIBC_2.7)(64bit) libc.so.6(GLIBC_2.9)(64bit) libcairo.so.2()(64bit) libcups.so.2()(64bit) libdbus-1.so.3()(64bit) libdl.so.2()(64bit) libdl.so.2(GLIBC_2.2.5)(64bit) libdrm.so.2()(64bit) libexpat.so.1()(64bit) libffmpeg.so()(64bit) libgbm.so.1()(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgdk-3.so.0()(64bit) libgdk_pixbuf-2.0.so.0()(64bit) libgio-2.0.so.0()(64bit) libglib-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libgtk-3.so.0()(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libnspr4.so()(64bit) libnss3.so()(64bit) libnss3.so(NSS_3.11)(64bit) libnss3.so(NSS_3.12)(64bit) libnss3.so(NSS_3.12.1)(64bit) libnss3.so(NSS_3.2)(64bit) libnss3.so(NSS_3.22)(64bit) libnss3.so(NSS_3.3)(64bit) libnss3.so(NSS_3.4)(64bit) libnss3.so(NSS_3.5)(64bit) libnss3.so(NSS_3.9.2)(64bit) libnssutil3.so()(64bit) libnssutil3.so(NSSUTIL_3.12.3)(64bit) libpango-1.0.so.0()(64bit) libpangocairo-1.0.so.0()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.12)(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libpthread.so.0(GLIBC_2.3.3)(64bit) libpthread.so.0(GLIBC_2.3.4)(64bit) librt.so.1()(64bit) librt.so.1(GLIBC_2.2.5)(64bit) libsmime3.so()(64bit) libsmime3.so(NSS_3.10)(64bit) libsmime3.so(NSS_3.2)(64bit) libxcb-dri3.so.0()(64bit) libxcb.so.1()(64bit) rtld(GNU_HASH)
-Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/sisu/rpmbuild/BUILDROOT/webtorrent-desktop-0.24.0-1.x86_64
-Wrote: /home/sisu/rpmbuild/SRPMS/webtorrent-desktop-0.24.0-1.src.rpm
-Wrote: /home/sisu/rpmbuild/RPMS/x86_64/webtorrent-desktop-0.24.0-1.x86_64.rpm
-Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.G4tEbY
-Done
+webtorrent-desktop-0.24.0-1.x86_64.rpm exists. Skip.
